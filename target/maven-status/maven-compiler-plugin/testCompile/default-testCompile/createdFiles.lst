@@ -1,0 +1,9 @@
+test\BaseTest.class
+utils\listeners\AnnotationTransformer.class
+test\RegistrationPageTest.class
+test\SearchTest.class
+utils\extentReports\ExtentManager.class
+utils\logger\CustomLogger.class
+utils\extentReports\ExtentTestManager.class
+utils\listeners\TestListener.class
+utils\listeners\Retry.class
