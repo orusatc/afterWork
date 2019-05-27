@@ -8,11 +8,10 @@ import java.lang.reflect.Method;
 
 public class CustomLogger {
 
-    private static final Logger log = Logger.getLogger("");
+    static final Logger log = Logger.getLogger("");
 
 
     public static void setLog(){
-
         }
 
     public static void setTestStatus(Method method){

@@ -1,6 +1,7 @@
 package pages;
 
 import com.relevantcodes.extentreports.ExtentTest;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -11,11 +12,10 @@ public class BasePage {
 
     public WebDriver driver;
     public WebDriverWait wait;
-    public static ExtentTest logger;
+    public static Logger logger;
 
     public void description(String description){
-        logger.setDescription(description);
-        logger.getDescription();
+
     }
 
     public BasePage(WebDriver driver){
@@ -50,8 +50,5 @@ public class BasePage {
         waitForElementVisibility(elementBy, waitingTime);
         return driver.findElement(elementBy).getText();
     }
-
-
-
 
 }

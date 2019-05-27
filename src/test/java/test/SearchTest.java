@@ -1,6 +1,7 @@
 package test;
 
 import dataStorage.RegisteredUser;
+import dataStorage.TestData;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.HomePage;
@@ -34,7 +35,7 @@ public class SearchTest extends BaseTest {
         registeredUser = RegisteredUser.getUser();
         homePage.openUkranianRozetka();
         loginPage.loginUser(registeredUser.getEmail(), registeredUser.getPassword());
-        homePage.checkUserSignIn(registeredUser.getName());
+        homePage.checkUserSignIn(TestData.CONGRATULATION.getData(), registeredUser.getName());
     }
 
 
